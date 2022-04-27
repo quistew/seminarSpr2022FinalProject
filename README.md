@@ -11,3 +11,6 @@ https://scikit-learn.org/stable/modules/neural_networks_supervised.html
 
 Preprocessing:
 https://scikit-learn.org/stable/modules/preprocessing.html
+
+Tutorial:
+https://analyticsindiamag.com/a-beginners-guide-to-scikit-learns-mlpclassifier/
