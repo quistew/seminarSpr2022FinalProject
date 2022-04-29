@@ -16,8 +16,8 @@ X_full = np.concatenate((X_pp, np.array([labels]).transpose()), 1)
 X_train = Sampler(X_full).getRandomSample(600)
 
 
-classifier = MLPClassifier(solver="adam", alpha=1e-5, hidden_layer_sizes=(5,2), random_state=1, max_iter=5000)     # changed from lbfgs
-classifier.fit(X, labels)
+classifier = MLPClassifier(solver="adam", alpha=1e-5, hidden_layer_sizes=(5,2), random_state=1, max_iter=5000, activation="relu")     # changed from lbfgs
+classifier.fit(X_train[:,0:3], X_train[:,3])
 
 newPoint1 = np.array([[-1.5, -1.5, -1.5]])
 print(classifier.predict(newPoint1.reshape(1,-1)))
